@@ -1,0 +1,536 @@
+doctype html
+html(lang=En)
+    head
+        title головна
+        include componets/head
+    body
+        .wrapper
+            include componets/header
+            main
+                .container
+                    .sale-banner
+                        img(src="img/sale-banner.jpg")
+                        .sale-banner-title
+                            h1 Фурнитура для ванны
+                            .sale-banner-desc
+                                p ALWAYS
+                                    span 25%
+                                    | OFF OR MORE
+                    .breadcrumbs
+                        ul.breadcrumbs-list
+                            li
+                                a(href="index.html") Главная
+                            li
+                                a(href="catalog.html") Плитка
+                            li
+                                a(href="#") Плитка для ванной
+                    .catalogSub
+                        .catalogSub-wrap
+                            .catalogSub-filter
+                                p.mobFilter
+                                form(method='get' action='/').filter
+                                    h6 Фильтр
+                                    .filter-price
+                                        p Цена
+                                        .filter-inputs
+                                            input.filter-price-input( type="number" id="min-price" name='min-value' data-min-value="0" )
+                                            input.filter-price-input( type="number" id="max-price" name='max-value' data-max-value="10000" )
+                                        #price-range
+                                    .filter-items
+                                        .filter-row
+                                            p Фильтр 1
+                                            .filter-drop
+                                                .filter-item
+                                                    input(type='checkbox' name='producer' id='producer_1')
+                                                    label(for='producer_1') Название 1
+                                                .filter-item
+                                                    input(type='checkbox' name='producer' id='producer_2')
+                                                    label(for='producer_2') Название 2
+                                                .filter-item
+                                                    input(type='checkbox' name='producer' id='producer_3')
+                                                    label(for='producer_3') Название 3
+                                                .filter-item
+                                                    input(type='checkbox' name='producer' id='producer_4')
+                                                    label(for='producer_4') Название 4
+                                                .filter-item
+                                                    input(type='checkbox' name='producer' id='producer_5')
+                                                    label(for='producer_5') Название 5
+                                                .filter-item
+                                                    input(type='checkbox' name='producer' id='producer_6')
+                                                    label(for='producer_6') Название 6
+                                                .filter-item
+                                                    input(type='checkbox' name='producer' id='producer_7')
+                                                    label(for='producer_7') Название 7
+                                                .filter-item
+                                                    input(type='checkbox' name='producer' id='producer_8')
+                                                    label(for='producer_8') Название 8
+                                        .filter-row
+                                            p Фильтр 2
+                                            .filter-drop
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 1
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 2
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 3
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 4
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 5
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 6
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 7
+                                                .filter-item
+                                                    input(type='checkbox' name='producer' )
+                                                    label Название 8
+                                        .filter-row
+                                            p Фильтр 3
+                                            .filter-drop
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 1
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 2
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 3
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 4
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 5
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 6
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 7
+                                                .filter-item
+                                                    input(type='checkbox' name='producer' )
+                                                    label Название 8
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 9
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 10
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 11
+                                                .filter-item
+                                                    input(type='checkbox' name='producer')
+                                                    label Название 12
+                                                .filter-item
+                                                    input(type='checkbox' name='producer' )
+                                                    label Название 13
+                            .product-wrap
+                                .product-wrap-title
+                                    h3 Плитка для ванной
+                                    .selects
+                                        .select-1
+                                            span Сортировать по
+                                            +select-sorting
+                                        .select-2
+                                            span Показывать
+                                            +select-number
+                                .product
+                                    .product-item
+                                        .product-label
+                                            .product-label-gifts
+                                                .semicircle
+                                                p.product-label-name
+                                                    span Подарок
+                                        a(href='#').product-img
+                                            img(src='img/product-img.png')
+                                            p.product-name Aenean Ru Bristique
+                                        .product-inform
+                                            .price
+                                                s.price-old  40000
+                                                    span грн
+                                                .price-new
+                                                    p 140400
+                                                    span грн
+                                            .add
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                            .product-description
+                                                p Параметр 1:
+                                                    span характеристика
+                                                p Параметр 2:
+                                                    span характеристика
+                                                p Параметр 3:
+                                                    span характеристика
+                                                p Параметр 4:
+                                                    span характеристика
+                                                p Параметр 5:
+                                                    span характеристика
+                                                p Параметр 6:
+                                                    span характеристика
+                                                p Параметр 7:
+                                                    span характеристика
+                                    .product-item
+                                        .product-label
+                                            .product-label-gifts
+                                                .semicircle
+                                                p.product-label-name
+                                                    span Подарок
+                                        a(href='#').product-img
+                                            img(src='img/product-img.png')
+                                            p.product-name Aenean Ru Bristique
+                                        .product-inform
+                                            .price
+                                                s.price-old  40000
+                                                    span грн
+                                                .price-new
+                                                    p 140400
+                                                    span грн
+                                            .add
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                        .product-description
+                                            p Параметр 1:
+                                                span характеристика
+                                            p Параметр 2:
+                                                span характеристика
+                                            p Параметр 3:
+                                                span характеристика
+                                            p Параметр 4:
+                                                span характеристика
+                                            p Параметр 5:
+                                                span характеристика
+                                            p Параметр 6:
+                                                span характеристика
+                                            p Параметр 7:
+                                                span характеристика
+                                    .product-item
+                                        .product-label
+                                            .product-label-gifts
+                                                .semicircle
+                                                p.product-label-name
+                                                    span Подарок
+                                        a(href='#').product-img
+                                            img(src='img/product-img.png')
+                                            p.product-name Aenean Ru Bristique
+                                        .product-inform
+                                            .price
+                                                s.price-old  40000
+                                                    span грн
+                                                .price-new
+                                                    p 140400
+                                                    span грн
+                                            .add
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                            .product-description
+                                                p Параметр 1:
+                                                    span характеристика
+                                                p Параметр 2:
+                                                    span характеристика
+                                                p Параметр 3:
+                                                    span характеристика
+                                                p Параметр 4:
+                                                    span характеристика
+                                                p Параметр 5:
+                                                    span характеристика
+                                                p Параметр 6:
+                                                    span характеристика
+                                                p Параметр 7:
+                                                    span характеристика
+                                    .product-item
+                                        .product-label
+                                            .product-label-gifts
+                                                .semicircle
+                                                p.product-label-name
+                                                    span Подарок
+                                        a(href='#').product-img
+                                            img(src='img/product-img.png')
+                                            p.product-name Aenean Ru Bristique
+                                        .product-inform
+                                            .price
+                                                s.price-old  40000
+                                                    span грн
+                                                .price-new
+                                                    p 140400
+                                                    span грн
+                                            .add
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                    .product-item
+                                        .product-label
+                                            .product-label-gifts
+                                                .semicircle
+                                                p.product-label-name
+                                                    span Подарок
+                                        a(href='#').product-img
+                                            img(src='img/product-img.png')
+                                            p.product-name Aenean Ru Bristique
+                                        .product-inform
+                                            .price
+                                                s.price-old  40000
+                                                    span грн
+                                                .price-new
+                                                    p 140400
+                                                    span грн
+                                            .add
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                    .product-item
+                                        .product-label
+                                            .product-label-gifts
+                                                .semicircle
+                                                p.product-label-name
+                                                    span Подарок
+                                        a(href='#').product-img
+                                            img(src='img/product-img.png')
+                                            p.product-name Aenean Ru Bristique
+                                        .product-inform
+                                            .price
+                                                s.price-old  40000
+                                                    span грн
+                                                .price-new
+                                                    p 140400
+                                                    span грн
+                                            .add
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                    .product-item
+                                        .product-label
+                                            .product-label-gifts
+                                                .semicircle
+                                                p.product-label-name
+                                                    span Подарок
+                                        a(href='#').product-img
+                                            img(src='img/product-img.png')
+                                            p.product-name Aenean Ru Bristique
+                                        .product-inform
+                                            .price
+                                                s.price-old  40000
+                                                    span грн
+                                                .price-new
+                                                    p 140400
+                                                    span грн
+                                            .add
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                    .product-item
+                                        .product-label
+                                            .product-label-gifts
+                                                .semicircle
+                                                p.product-label-name
+                                                    span Подарок
+                                        a(href='#').product-img
+                                            img(src='img/product-img.png')
+                                            p.product-name Aenean Ru Bristique
+                                        .product-inform
+                                            .price
+                                                s.price-old  40000
+                                                    span грн
+                                                .price-new
+                                                    p 140400
+                                                    span грн
+                                            .add
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                    .product-item
+                                        .product-label
+                                            .product-label-gifts
+                                                .semicircle
+                                                p.product-label-name
+                                                    span Подарок
+                                        a(href='#').product-img
+                                            img(src='img/product-img.png')
+                                            p.product-name Aenean Ru Bristique
+                                        .product-inform
+                                            .price
+                                                s.price-old 40000
+                                                    span грн
+                                                .price-new
+                                                    p 140400
+                                                    span грн
+                                            .add
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                    .product-item
+                                        .product-label
+                                            .product-label-gifts
+                                                .semicircle
+                                                p.product-label-name
+                                                    span Подарок
+                                        a(href='#').product-img
+                                            img(src='img/product-img.png')
+                                            p.product-name Aenean Ru Bristique
+                                        .product-inform
+                                            .price
+                                                s.price-old  40000
+                                                    span грн
+                                                .price-new
+                                                    p 140400
+                                                    span грн
+                                            .add
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                    .product-item
+                                        .product-label
+                                            .product-label-gifts
+                                                .semicircle
+                                                p.product-label-name
+                                                    span Подарок
+                                        a(href='#').product-img
+                                            img(src='img/product-img.png')
+                                            p.product-name Aenean Ru Bristique
+                                        .product-inform
+                                            .price
+                                                s.price-old  40000
+                                                    span грн
+                                                .price-new
+                                                    p 140400
+                                                    span грн
+                                            .add
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                    .product-item
+                                        .product-label
+                                            .product-label-gifts
+                                                .semicircle
+                                                p.product-label-name
+                                                    span Подарок
+                                        a(href='#').product-img
+                                            img(src='img/product-img.png')
+                                            p.product-name Aenean Ru Bristique
+                                        .product-inform
+                                            .price
+                                                s.price-old  40000
+                                                    span грн
+                                                .price-new
+                                                    p 140400
+                                                    span грн
+                                            .add
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                .catalogSub-content
+                                    .pagination
+                                        a(href='#').pagination-arrow.pagination-arrow-left
+                                            <?xml version="1.0" encoding="iso-8859-1"?><!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve"><g><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                        ul.paginationList
+                                            li
+                                                a(href='#') 1
+                                            li
+                                                a(href='#') 2
+                                            li
+                                                a(href='#') 3
+                                            li
+                                                a(href='#') 4
+                                            li
+                                                a(href='#') 5
+                                            li
+                                                a(href='#') 6
+                                            li
+                                                a(href='#') 7
+
+                                            li
+                                                a(href='#') ...
+                                            li
+                                                a(href='#') 36
+                                            li
+                                                a(href='#') 37
+                                            li
+                                                a(href='#') 38
+                                        a(href='#').pagination-arrow.pagination-arrow-right
+                                             <?xml version="1.0" encoding="iso-8859-1"?><!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve"><g><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                .product-wrap-desc
+                                    .product-wrap-desc.main-title
+                                        a(href="#") общая информация о товаре
+                                    .product-big-desc
+                                        p Плитка на современном строительном рынке становится все более востребованным и популярным облицовочным материалом. Такие показатели актуальности кафеля обусловлены отменным сочетанием практичности, доступности и эстетичности. Купить керамическую плитку — значит обеспечить рациональный дизайн жилища, коммерческого предприятия или же государственного учреждения на несколько десятилетий.
+                                        p Исходя из индивидуальных предпочтений и высоких эксплуатационных характеристик, керамическая плитка по праву считается наиболее оптимальным решением для отделки пространств с неблагоприятным микроклиматом, таких как балконы и лоджии, ванны и кухни, террасы и крыльцо. Экологическая чистота и гипоаллергенность сырья делают плитку незаменимым вариантом при оформлении квартир. Существуют такие разновидности  кафеля:
+                                        p Плитка однократного или двукратного обжига (наиболее распространенная и востребованная разновидность).
+                                        p Клинкерная плитка, предназначенная для внешних отделочных работ.
+                                        p Керамогранитные плитки, которые изготавливаются из смеси глины и гранитной кроши и отличаются повышенной прочностью.
+                                        p В Украине можно купить плитку при помощи двух основных вариантов. Безусловно, можно обратиться к услугам специализированного строительного маркета или же приобрести кафель в каталоге магазина плитки, работающего в сети Интернет. Способ приобретения керамической плитки зависит исключительно от индивидуальных потребностей и возможностей.
+                                        p Магазин плитки Keramis предлагает возможность оперативно приобрести кафель в режиме онлайн по самым доступным ценам. Керамическая плитка от ведущих европейских брендов, представленная в нашем каталоге, отличается отменным качеством, высокими эксплуатационными данными, превосходными показателями долговечности и потрясающей визуальной привлекательностью.
+                                        p Цена керамической плитки напрямую зависит от личных представлений об эстетичности, качественности и практичности. Современные производители предлагают кафель, удовлетворяющий потребности бюджетных покупателей или же плитку, принадлежащую к разряду элитных и эксклюзивных отделочных материалов. Также значительное влияние на стоимость облицовочного материала оказывает качество ее эстетического выполнения: чем дольше плитка сохраняет показатели визуальной привлекательности даже в неблагоприятных условиях (таких как влажность, перепады температур, применение абразивных и химических средств), те она, соответственно, дороже.
+                                        p Купить керамическую плитку можно в магазине плитки Keramis, услуги которого угодят даже въедливым и прихотливым клиентам. Широчайший ассортимент коллекций с огромным диапазоном цен плитки придется по нраву отечественной аудитории покупателей. Жители города Киев и других областей могут без затруднений приобрести превосходную плитку, обратившись к услугам нашего интернет-магазина.
+            include componets/footer
+        include componets/scripts

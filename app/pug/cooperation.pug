@@ -1,0 +1,51 @@
+include mixin/mixin
+doctype html
+html
+    head
+        include componets/head
+    body
+        .wrapper
+            include componets/header
+            main
+                .container
+                    .sale-banner
+                        img(src="img/sale-banner.jpg")
+                        .sale-banner-title
+                            h1 Фурнитура для ванны
+                            .sale-banner-desc
+                                p ALWAYS
+                                    span 25%
+                                    | OFF OR MORE
+                    .breadcrumbs
+                        ul.breadcrumbs-list
+                            li
+                                a(href="index.html") Главная
+                            li
+                                a(href="cooperation.html") Сотрудничество с нами
+                    .cooperation-wrap
+                        .main-title
+                            p  Сотрудничество с нами
+                        .cooperation
+                            h3 Как стать новым партнером интернет-магазина Aqua Deluxe
+                            p Для начала сотрудничества необходимо предоставить следующую информацию:
+                            ol.cooperation-list
+                                li Краткую характеристику бренда, его доля в процентах и деньгах среди товарных и ценовых аналогов на рынке Украины, Европы, Мира
+                                li Квартальный оборот по предыдущим периодам в различных типах реализации (онлайн, офлайн, опт)
+                                li Предполагаемый оборот с учетом сезонности
+                                li Список конкурирующих брендов — их доля на рынке Украины
+                                li Список конкурирующих продуктов — их доля на рынке Украины
+                                li Маркетинговый фонд на развитие бренда
+                                li Маржинальность и степень надежности фиксированных цен на рынке
+                                li Указать преимущественные характеристики бренда, слабые и сильные стороны
+                                li Указать периодичность поставок и объем складских остатков
+                                li Предоставить образцы продукции
+                                li Кредитные условия
+                                li Формы оплаты
+                                li Сервисное обслуживание, возможность возврата
+                                li Возможность проведения тренингов
+                                li Описание товаров в электронном виде
+                            p Ваши предложения присылайте нам на e-mail:
+                                a(href="mailto:partnership@aquadelux.com.ua") partnership@aquadelux.com.ua
+
+            include componets/footer
+        include componets/scripts

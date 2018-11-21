@@ -1,0 +1,30 @@
+include mixin/mixin
+doctype html
+html
+    head
+        include componets/head
+    body
+        .wrapper
+            include componets/header
+            main
+                .container
+                    .sale-banner
+                        img(src="img/sale-banner.jpg")
+                        .sale-banner-title
+                            h1 Фурнитура для ванны
+                            .sale-banner-desc
+                                p ALWAYS
+                                    span 25%
+                                    | OFF OR MORE
+                    .breadcrumbs
+                        ul.breadcrumbs-list
+                            li
+                                a(href="index.html") Главная
+                            li
+                                a(href="delivery.html") Оплата и доставка
+                    .delivery-wrap
+                        .main-title
+                            p  Оплата и доставка
+                        .delivery
+            include componets/footer
+        include componets/scripts

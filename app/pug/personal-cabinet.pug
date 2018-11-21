@@ -1,0 +1,683 @@
+doctype html
+include mixin/mixin
+html(lang='ru')
+    head
+        title головна
+        include componets/head
+    body
+        .wrapper
+            include componets/header
+            main
+                .container
+                    .sale-banner
+                        img(src="img/sale-banner.jpg")
+                        .sale-banner-title
+                            h1 Фурнитура для ванны
+                            .sale-banner-desc
+                                p ALWAYS
+                                    span 25%
+                                    | OFF OR MORE
+                    .breadcrumbs
+                        ul.breadcrumbs-list
+                            li
+                                a(href="index.html") Главная
+                            li
+                                a(href="personal-cabinet.html") Личный кабинет
+                    section.personal-cabinet-wrap
+                        .main-title
+                            p Личный кабинет
+                        .personal-cabinet
+                            .tab-personal-cabinet#tabs
+                                .tab-left
+                                    ul.tab-list
+                                        li
+                                            a(href="#tabs-1") История заказов
+                                        li
+                                            a(href="#tabs-2") Редактирование профиля
+                                        li
+                                            a(href="#tabs-3") Корзина
+                                        li
+                                            a(href="#tabs-4") Список желаний
+                                        li
+                                            a(href="#tabs-5") Лист ожидания
+                                .tab-right
+                                    .tab-content#tabs-1
+                                        .tab-history
+                                            table.tab-history-table
+                                                thead
+                                                    tr
+                                                        th № заказа
+                                                        th Дата заказа
+                                                        th Количество товара
+                                                        th Итог заказа
+                                                        th Статус
+                                                        th Номер ТТН
+                                                tbody
+                                                    tr
+                                                        td 101881379234
+                                                        td 25.04.1995
+                                                        td 2500
+                                                        td 1500000
+                                                            span  грн
+                                                        td комплектуется на складе
+                                                        td 101881379234
+                                                    tr
+                                                        td 101881379234
+                                                        td 25.04.1995
+                                                        td 2500
+                                                        td 1500000
+                                                            span  грн
+                                                        td принят
+                                                        td 101881379234
+                                                    tr
+                                                        td 101881379234
+                                                        td 25.04.1995
+                                                        td 2500
+                                                        td 1500000
+                                                            span  грн
+                                                        td отменен
+                                                        td 101881379234
+                                    .tab-content#tabs-2
+                                        .edit
+                                            p Вашы данные
+                                            .edit-items
+                                                .edit-item
+                                                    form(method='post' id='edit_status')
+                                                        label(for='user_status') Статус*
+                                                        input(type='text' name='producer' value="standart" id='user_status' readonly)
+                                                        +edit_icon()
+                                                        .edit-buttons
+                                                            button сохранить
+                                                            span Отмена
+                                                    form(method='post' id='edit_name')
+                                                        label(for='user_status') Имя Фамилия*
+                                                        input(type='text' name='producer' value="Василиса Прекрасная" id='user_name' readonly)
+                                                        +edit_icon()
+                                                        .edit-buttons
+                                                            button сохранить
+                                                            span Отмена
+                                                    form(method='post' id='edit_phone')
+                                                        label(for='user_status') Телефон*
+                                                        input(type='text' name='producer' value="+38 (067) 321 65 47" id='user_phone' readonly)
+                                                        +edit_icon()
+                                                        .edit-buttons
+                                                            button сохранить
+                                                            span Отмена
+                                                    form(method='post' id='edit_email')
+                                                        label(for='user_status') Email*
+                                                        input(type='text' name='producer' value="vasilisaprekrasnaia@gmail.com" id='user_email' readonly)
+                                                        +edit_icon()
+                                                        .edit-buttons
+                                                            button сохранить
+                                                            span Отмена
+                                                    form(method='post' id='edit_city')
+                                                        label(for='user_status') Город/адрес доставки*
+                                                        input(type='text' name='producer' value="Харьков" id='user_city' readonly)
+                                                        +edit_icon()
+                                                        .edit-buttons
+                                                            button сохранить
+                                                            span Отмена
+                                                        .remove-city
+                                                            <?xml version="1.0" encoding="iso-8859-1"?><!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="15px" height="15px"><g><g><path d="M406,61h-75V45c0-24.813-20.187-45-45-45h-60c-24.813,0-45,20.187-45,45v16h-75c-24.813,0-45,20.187-45,45v30    c0,8.284,6.716,15,15,15h16.194l26.565,319.737C120.688,493.875,140.386,512,163.604,512h184.792    c23.218,0,42.916-18.125,44.845-41.267L419.806,151H436c8.284,0,15-6.716,15-15v-30C451,81.187,430.813,61,406,61z M211,45    c0-8.271,6.729-15,15-15h60c8.271,0,15,6.729,15,15v16h-90V45z M363.344,468.245c-0.643,7.713-7.209,13.755-14.948,13.755H163.604    c-7.739,0-14.306-6.042-14.948-13.751L122.298,151h267.404L363.344,468.245z M421,121H91v-15c0-8.271,6.729-15,15-15h300    c8.271,0,15,6.729,15,15V121z" fill="#dcaa53"/></g></g><g><g><path d="M256,181c-8.284,0-15,6.716-15,15v241c0,8.284,6.716,15,15,15s15-6.716,15-15V196C271,187.716,264.284,181,256,181z" fill="#dcaa53"/></g></g><g><g><path d="M316,181c-8.284,0-15,6.716-15,15v241c0,8.284,6.716,15,15,15s15-6.716,15-15V196C331,187.716,324.284,181,316,181z" fill="#dcaa53"/></g></g><g><g><path d="M196,181c-8.284,0-15,6.716-15,15v241c0,8.284,6.716,15,15,15s15-6.716,15-15V196C211,187.716,204.284,181,196,181z" fill="#dcaa53"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                    span Добавить адрес
+                                            p Сменить пароль
+                                            .edit-password
+                                                .edit-item
+                                                    label(for='producer_6') Текущий пароль*
+                                                    input(type='text' name='producer' id='producer_6')
+                                                .edit-item
+                                                    label(for='producer_7') Новый пароль*
+                                                    input(type='text' name='producer' id='producer_7')
+                                                .edit-item
+                                                    label(for='producer_8') Подтвердите новый пароль*
+                                                    input(type='text' name='producer' id='producer_8')
+                                                .edit-item
+                                                    label
+                                                    .edit-buttons-save
+                                                        button сохранить
+                                    .tab-content#tabs-3
+                                        .basket-empty
+                                            h2 Корзина пустая
+                                            .tab-basket-button
+                                                a(href="#") ВЕРНУТЬСЯ К ПОКУПКАМ
+                                        .basket-main
+                                            .tab-basket
+                                                table.tab-basket-table
+                                                    thead
+                                                        tr
+                                                            th №
+                                                            th Фото
+                                                            th Название
+                                                            th Цена
+                                                            th Количество
+                                                            th Стоимость
+                                                    tbody
+                                                        tr
+                                                            td 1.
+                                                            td
+                                                                img.tab-basket-img(src="img/product-img.png")
+                                                            td
+                                                                p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                            td
+                                                                .price-new
+                                                                    span 1500000
+                                                                    span  грн
+                                                            td
+                                                                .number
+                                                                    input(type="text" value="1" size="5")
+                                                                    a.minus -
+                                                                    a.plus +
+                                                            td
+                                                                .summ-product
+                                                                    span 150000
+                                                                        .tab-item-remove
+                                                                            img(src='img/cancel.svg')
+                                                                        span  грн
+                                                        tr
+                                                            td 2.
+                                                                td
+                                                                    img.tab-basket-img(src="img/basket-img.png")
+                                                                td
+                                                                    p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                                td
+                                                                    .price-new
+                                                                        span 1500000
+                                                                        span  грн
+                                                                td
+                                                                    .number
+                                                                        input(type="text" value="1" size="5")
+                                                                        a.minus -
+                                                                        a.plus +
+                                                                td
+                                                                    .summ-product
+                                                                        span 150000
+                                                                        .tab-item-remove
+                                                                            img(src='img/cancel.svg')
+                                                                        span  грн
+                                                        tr
+                                                            td 3.
+                                                                td
+                                                                    img.tab-basket-img(src="img/banner.png")
+                                                                td
+                                                                    p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                                td
+                                                                    .price-new
+                                                                        span 1500000
+                                                                        span  грн
+                                                                td
+                                                                    .number
+                                                                        input(type="text" value="1" size="5")
+                                                                        a.minus -
+                                                                        a.plus +
+                                                                td
+                                                                    .summ-product
+                                                                        span 150000
+                                                                        .tab-item-remove
+                                                                            img(src='img/cancel.svg')
+                                                                        span  грн
+                                                .summ
+                                                    span Общая сумма
+                                                    .summ-all
+                                                        span 74000
+                                                        span грн
+                                                .tab-basket-button
+                                                    a(href="#") ВЕРНУТЬСЯ К ПОКУПКАМ
+                                                    a(href="#") Оформить заказ
+                                        .basket-mob
+                                            .basket-mob-item
+                                                img.tab-basket-img(src="img/product-img.png")
+                                                .basket-mob-block
+                                                    p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                    .price-new
+                                                        span 1500000
+                                                        span  грн
+                                                    .number
+                                                        input(type="text" value="1" size="5")
+                                                        a.minus -
+                                                        a.plus +
+                                                .summ-product
+                                                    span 150000
+                                                    .tab-item-remove
+                                                        img(src='img/cancel.svg')
+                                                    span  грн
+                                            .basket-mob-item
+                                                img.tab-basket-img(src="img/product-img.png")
+                                                .basket-mob-block
+                                                    p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                    .price-new
+                                                        span 1500000
+                                                        span  грн
+                                                    .number
+                                                        input(type="text" value="1" size="5")
+                                                        a.minus -
+                                                        a.plus +
+                                                .summ-product
+                                                    span 150000
+                                                    .tab-item-remove
+                                                        img(src='img/cancel.svg')
+                                                    span  грн
+                                            .basket-mob-item
+                                                img.tab-basket-img(src="img/product-img.png")
+                                                .basket-mob-block
+                                                    p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                    .price-new
+                                                        span 1500000
+                                                        span  грн
+                                                    .number
+                                                        input(type="text" value="1" size="5")
+                                                        a.minus -
+                                                        a.plus +
+                                                .summ-product
+                                                    span 150000
+                                                    .tab-item-remove
+                                                        img(src='img/cancel.svg')
+                                                    span  грн
+                                            .summ
+                                                span Общая сумма
+                                                .summ-all
+                                                    span 74000
+                                                    span грн
+                                            .tab-basket-button
+                                                a(href="#") ВЕРНУТЬСЯ К ПОКУПКАМ
+                                                a(href="#") Оформить заказ
+                                    .tab-content#tabs-4
+                                        .product
+                                            .product-item
+                                                .product-label
+                                                    .product-label-gifts
+                                                        .semicircle
+                                                        p.product-label-name
+                                                            span Подарок
+                                                a(href='#').product-img
+                                                    img(src='img/product-img.png')
+                                                    p.product-name Aenean Ru Bristique
+                                                .product-inform
+                                                    .price
+                                                        s.price-old  40000
+                                                            span грн
+                                                        .price-new
+                                                            p 140400
+                                                            span грн
+                                                    .add
+                                                        .delete-from-list
+                                                            span Удалить из списка
+                                                        .buy
+                                                            a(href="#") КУПИТЬ
+                                                    .product-description
+                                                        p Параметр 1:
+                                                            span характеристика
+                                                        p Параметр 2:
+                                                            span характеристика
+                                                        p Параметр 3:
+                                                            span характеристика
+                                                        p Параметр 4:
+                                                            span характеристика
+                                                        p Параметр 5:
+                                                            span характеристика
+                                                        p Параметр 6:
+                                                            span характеристика
+                                                        p Параметр 7:
+                                                            span характеристика
+                                            .product-item
+                                                .product-label
+                                                    .product-label-gifts
+                                                        .semicircle
+                                                        p.product-label-name
+                                                            span Подарок
+                                                a(href='#').product-img
+                                                    img(src='img/product-img.png')
+                                                    p.product-name Aenean Ru Bristique
+                                                .product-inform
+                                                    .price
+                                                        s.price-old  40000
+                                                            span грн
+                                                        .price-new
+                                                            p 140400
+                                                            span грн
+                                                    .add
+                                                        .delete-from-list
+                                                            span Удалить из списка
+                                                        .buy
+                                                            a(href="#") КУПИТЬ
+                                                .product-description
+                                                    p Параметр 1:
+                                                        span характеристика
+                                                    p Параметр 2:
+                                                        span характеристика
+                                                    p Параметр 3:
+                                                        span характеристика
+                                                    p Параметр 4:
+                                                        span характеристика
+                                                    p Параметр 5:
+                                                        span характеристика
+                                                    p Параметр 6:
+                                                        span характеристика
+                                                    p Параметр 7:
+                                                        span характеристика
+                                            .product-item
+                                                .product-label
+                                                    .product-label-gifts
+                                                        .semicircle
+                                                        p.product-label-name
+                                                            span Подарок
+                                                a(href='#').product-img
+                                                    img(src='img/product-img.png')
+                                                    p.product-name Aenean Ru Bristique
+                                                .product-inform
+                                                    .price
+                                                        s.price-old  40000
+                                                            span грн
+                                                        .price-new
+                                                            p 140400
+                                                            span грн
+                                                    .add
+                                                        .delete-from-list
+                                                            span Удалить из списка
+                                                        .buy
+                                                            a(href="#") КУПИТЬ
+                                                    .product-description
+                                                        p Параметр 1:
+                                                            span характеристика
+                                                        p Параметр 2:
+                                                            span характеристика
+                                                        p Параметр 3:
+                                                            span характеристика
+                                                        p Параметр 4:
+                                                            span характеристика
+                                                        p Параметр 5:
+                                                            span характеристика
+                                                        p Параметр 6:
+                                                            span характеристика
+                                                        p Параметр 7:
+                                                            span характеристика
+                                    .tab-content#tabs-5
+                                        .tab-content-wrap
+                                            .basket-main
+                                                .order-status
+                                                    .ord
+                                                        p Ваш заказ
+                                                        span №
+                                                        span 123456
+                                                        p От
+                                                        span 13.07.2017
+                                                    .status
+                                                        p Cтатус
+                                                        span Комплектуется на складе
+                                                .tab-basket
+                                                    table.tab-basket-table
+                                                        thead
+                                                            tr
+                                                                th №
+                                                                th Фото
+                                                                th Название
+                                                                th Цена
+                                                                th Количество
+                                                                th Стоимость
+                                                        tbody
+                                                            tr
+                                                                td 1.
+                                                                td
+                                                                    img.tab-basket-img(src="img/product-img.png")
+                                                                td
+                                                                    p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                                td
+                                                                    .price-new
+                                                                        span 1500000
+                                                                        span  грн
+                                                                td
+                                                                    .number
+                                                                        input(type="text" value="1" size="5")
+                                                                        a.minus -
+                                                                        a.plus +
+                                                                td
+                                                                    .summ-product
+                                                                        span 150000
+                                                                        span  грн
+                                                            tr
+                                                                td 2.
+                                                                    td
+                                                                        img.tab-basket-img(src="img/basket-img.png")
+                                                                    td
+                                                                        p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                                    td
+                                                                        .price-new
+                                                                            span 1500000
+                                                                            span  грн
+                                                                    td
+                                                                        .number
+                                                                            input(type="text" value="1" size="5")
+                                                                            a.minus -
+                                                                            a.plus +
+                                                                    td
+                                                                        .summ-product
+                                                                            span 150000
+                                                                            span  грн
+                                                            tr
+                                                                td 3.
+                                                                    td
+                                                                        img.tab-basket-img(src="img/banner.png")
+                                                                    td
+                                                                        p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                                    td
+                                                                        .price-new
+                                                                            span 1500000
+                                                                            span  грн
+                                                                    td
+                                                                        .number
+                                                                            input(type="text" value="1" size="5")
+                                                                            a.minus -
+                                                                            a.plus +
+                                                                    td
+                                                                        .summ-product
+                                                                            span 150000
+                                                                            span  грн
+                                                    .summ
+                                                        span Общая сумма
+                                                        .summ-all
+                                                            span 74000
+                                                            span грн
+                                            .basket-mob
+                                                .order-status
+                                                    .ord
+                                                        p Ваш заказ
+                                                        span №
+                                                        span 123456
+                                                        p От
+                                                        span 13.07.2017
+                                                    .status
+                                                        p Cтатус
+                                                        span Комплектуется на складе
+                                                .basket-mob-item
+                                                    img.tab-basket-img(src="img/product-img.png")
+                                                    .basket-mob-block
+                                                        p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                        .price-new
+                                                            span 1500000
+                                                            span  грн
+                                                        .number
+                                                            input(type="text" value="1" size="5")
+                                                            a.minus -
+                                                            a.plus +
+                                                    .summ-product
+                                                        span 150000
+                                                        span  грн
+                                                .basket-mob-item
+                                                    img.tab-basket-img(src="img/product-img.png")
+                                                    .basket-mob-block
+                                                        p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                        .price-new
+                                                            span 1500000
+                                                            span  грн
+                                                        .number
+                                                            input(type="text" value="1" size="5")
+                                                            a.minus -
+                                                            a.plus +
+                                                    .summ-product
+                                                        span 150000
+                                                        span  грн
+                                                .basket-mob-item
+                                                    img.tab-basket-img(src="img/product-img.png")
+                                                    .basket-mob-block
+                                                        p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                        .price-new
+                                                            span 1500000
+                                                            span  грн
+                                                        .number
+                                                            input(type="text" value="1" size="5")
+                                                            a.minus -
+                                                            a.plus +
+                                                    .summ-product
+                                                        span 150000
+                                                        span  грн
+                                                .summ
+                                                    span Общая сумма
+                                                    .summ-all
+                                                        span 74000
+                                                        span грн
+                                            .basket-main
+                                                .order-status
+                                                    .ord
+                                                        p Ваш заказ
+                                                        span №
+                                                        span 123456
+                                                        p От
+                                                        span 13.07.2017
+                                                    .status
+                                                        p Cтатус
+                                                        span Комплектуется на складе
+                                                .tab-basket
+                                                    table.tab-basket-table
+                                                        thead
+                                                            tr
+                                                                th №
+                                                                th Фото
+                                                                th Название
+                                                                th Цена
+                                                                th Количество
+                                                                th Стоимость
+                                                        tbody
+                                                            tr
+                                                                td 1.
+                                                                td
+                                                                    img.tab-basket-img(src="img/product-img.png")
+                                                                td
+                                                                    p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                                td
+                                                                    .price-new
+                                                                        span 1500000
+                                                                        span  грн
+                                                                td
+                                                                    .number
+                                                                        input(type="text" value="1" size="5")
+                                                                        a.minus -
+                                                                        a.plus +
+                                                                td
+                                                                    .summ-product
+                                                                        span 150000
+                                                                        span  грн
+                                                            tr
+                                                                td 2.
+                                                                    td
+                                                                        img.tab-basket-img(src="img/basket-img.png")
+                                                                    td
+                                                                        p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                                    td
+                                                                        .price-new
+                                                                            span 1500000
+                                                                            span  грн
+                                                                    td
+                                                                        .number
+                                                                            input(type="text" value="1" size="5")
+                                                                            a.minus -
+                                                                            a.plus +
+                                                                    td
+                                                                        .summ-product
+                                                                            span 150000
+                                                                            span  грн
+                                                            tr
+                                                                td 3.
+                                                                    td
+                                                                        img.tab-basket-img(src="img/banner.png")
+                                                                    td
+                                                                        p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                                    td
+                                                                        .price-new
+                                                                            span 1500000
+                                                                            span  грн
+                                                                    td
+                                                                        .number
+                                                                            input(type="text" value="1" size="5")
+                                                                            a.minus -
+                                                                            a.plus +
+                                                                    td
+                                                                        .summ-product
+                                                                            span 150000
+                                                                            span  грн
+                                                    .summ
+                                                        span Общая сумма
+                                                        .summ-all
+                                                            span 74000
+                                                            span грн
+                                            .basket-mob
+                                                .order-status
+                                                    .ord
+                                                        p Ваш заказ
+                                                        span №
+                                                        span 123456
+                                                        p От
+                                                        span 13.07.2017
+                                                    .status
+                                                        p Cтатус
+                                                        span Комплектуется на складе
+                                                .basket-mob-item
+                                                    img.tab-basket-img(src="img/product-img.png")
+                                                    .basket-mob-block
+                                                        p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                        .price-new
+                                                            span 1500000
+                                                            span  грн
+                                                        .number
+                                                            input(type="text" value="1" size="5")
+                                                            a.minus -
+                                                            a.plus +
+                                                    .summ-product
+                                                        span 150000
+                                                        span  грн
+                                                .basket-mob-item
+                                                    img.tab-basket-img(src="img/product-img.png")
+                                                    .basket-mob-block
+                                                        p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                        .price-new
+                                                            span 1500000
+                                                            span  грн
+                                                        .number
+                                                            input(type="text" value="1" size="5")
+                                                            a.minus -
+                                                            a.plus +
+                                                    .summ-product
+                                                        span 150000
+                                                        span  грн
+                                                .basket-mob-item
+                                                    img.tab-basket-img(src="img/product-img.png")
+                                                    .basket-mob-block
+                                                        p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                        .price-new
+                                                            span 1500000
+                                                            span  грн
+                                                        .number
+                                                            input(type="text" value="1" size="5")
+                                                            a.minus -
+                                                            a.plus +
+                                                    .summ-product
+                                                        span 150000
+                                                        span  грн
+                                                .summ
+                                                    span Общая сумма
+                                                    .summ-all
+                                                        span 74000
+                                                        span грн
+                                            .tab-basket-button
+                                                a(href="#") ВЕРНУТЬСЯ К ПОКУПКАМ
+                                                a(href="#") История заказов
+            include componets/footer
+        include componets/scripts

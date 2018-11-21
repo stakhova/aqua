@@ -1,0 +1,102 @@
+include mixin/mixin
+doctype html
+html
+    head
+        include componets/head
+    body
+        .wrapper
+            include componets/header
+            main
+                .container
+                    .sale-banner
+                        img(src="img/sale-banner.jpg")
+                        .sale-banner-title
+                            h1 Фурнитура для ванны
+                            .sale-banner-desc
+                                p ALWAYS
+                                    span 25%
+                                    | OFF OR MORE
+                    .breadcrumbs
+                        ul.breadcrumbs-list
+                            li
+                                a(href="index.html") Главная
+                            li
+                                a(href="about-company.html") О Компании
+                    .about-company-wrap
+                        .main-title
+                            p О компании
+                        .about-company
+                            .about-company-info
+                                p Интернет-магазин Aqua Delux – это Ваш надежный спутник в мире сантехники, плитки, настенных и напольных отделочных материалов. Наша миссия – сберечь Ваше время и деньги, которые неизбежно тратятся на изнурительный поиск нужных товаров для ремонта.
+                                p Сотрудники нашего интернет-магазина с радостью помогут Вам с выбором сантехники, плитки и других отделочных материалов. На онлайн-витрине магазина Керамис Вы найдете керамическую плитку, мозаику и керамогранит известных европейских производителей.
+                                p У нас есть любая сантехника и мебель для ванны, которая порадует Вас функциональностью и красотой. Широкий ассортимент смесителей удовлетворит запросы самых взыскательных клиентов, а кухонные мойки, предложенные на сайте, станут Вашими надежными помощниками в деле сотворения кулинарных шедевров.
+                                img.about-company-img(src="img/IMG.jpg")
+                                p Интернет-магазин Aqua Delux – это Ваш надежный спутник в мире сантехники, плитки, настенных и напольных отделочных материалов. Наша миссия – сберечь Ваше время и деньги, которые неизбежно тратятся на изнурительный поиск нужных товаров для ремонта
+                                p Сотрудники нашего интернет-магазина с радостью помогут Вам с выбором сантехники, плитки и других отделочных материалов. На онлайн-витрине магазина Керамис Вы найдете керамическую плитку, мозаику и керамогранит известных европейских производителей.
+                                p У нас есть любая сантехника и мебель для ванны, которая порадует Вас функциональностью и красотой. Широкий ассортимент смесителей удовлетворит запросы самых взыскательных клиентов, а кухонные мойки, предложенные на сайте, станут Вашими надежными помощниками в деле сотворения кулинарных шедевров.
+                            .about-progress
+                                .about-progress-bar
+                                    .row
+                                        .col-md-3
+                                            .circle-area
+                                                .circle-area-wrapper#cirlc-1
+                                                    .circle-inner
+                                                    .circle-value
+                                                        span 7
+                                                .circle-title
+                                                    h2 Первый показатель про компанию
+                                    .row
+                                        .col-md-3
+                                            .circle-area
+                                                .circle-area-wrapper#cirlc-2
+                                                    .circle-inner
+                                                    .circle-value
+                                                        span 78
+                                                .circle-title
+                                                    h2 Второй показатель про компанию
+                                    .row
+                                        .col-md-3
+                                            .circle-area
+                                                .circle-area-wrapper#cirlc-3
+                                                    .circle-inner
+                                                    .circle-value
+                                                        span 978
+                                                .circle-title
+                                                    h2 Третий показатель про компанию
+                            .about-company-quality
+                                .about-company-quality-desc
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem debitis eius, excepturi facere ipsum iste nemo nulla odit quam recusandae sit sunt voluptates. Aperiam autem dicta eaque harum id magni maiores molestias, nemo nobis odio pariatur, quidem quis quod rerum, similique sint sunt totam! Dolor ipsum labore perspiciatis quas!
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid pariatur quod similique. A accusamus ad aliquid architecto assumenda delectus, deleniti dolorem dolorum ea eaque, explicabo id ipsa ipsum iure magnam nam nulla odit quae rerum sint, soluta veniam vero voluptate? Accusantium beatae cupiditate deleniti dignissimos earum esse incidunt magnam nostrum quis repellendus! Asperiores aspernatur culpa dolores ducimus esse excepturi harum illum laboriosam maxime minima necessitatibus, nisi nobis quae quia quisquam quo quos sed voluptate voluptatibus voluptatum. Alias iure quisquam voluptatum?
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt eligendi error exercitationem expedita facilis illo in itaque magni maiores molestiae necessitatibus nesciunt omnis possimus qui rerum, similique tempora vero!
+                                a.form-btn(href="#") В каталог
+                            .partners
+                                h3 Торговые марки
+                                .partners-slider
+                                    .partners-slider-items
+                                        img(src="img/cersanit.png")
+                                    .partners-slider-items
+                                        img(src="img/cersanit.png")
+                                    .partners-slider-items
+                                        img(src="img/cersanit.png")
+                                    .partners-slider-items
+                                        img(src="img/cersanit.png")
+                                    .partners-slider-items
+                                        img(src="img/cersanit.png")
+                                    .partners-slider-items
+                                        img(src="img/Roca.png")
+                            .about-company-question
+                                form(method='get' action='/').form-big
+                                    p Остались вопросы? Задавайте!
+                                    .form-items
+                                        .form-item
+                                            input(type='text' name='producer' placeholder="Email*" id='producer_1')
+                                        .form-item
+                                            input(type='text' name='producer' placeholder="Фамилия, имя*" id='producer_2')
+                                        .form-item
+                                            input(type='text' name='producer' placeholder="Телефон*" id='producer_3')
+                                        .form-item
+                                            textarea(type='text' name='producer' placeholder="Что вы хотели спросить?" id='producer_4')
+                                        .form-button
+                                            a.form-btn(href="#") Отправить
+            include componets/footer
+        include componets/scripts

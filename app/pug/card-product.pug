@@ -1,0 +1,296 @@
+doctype html
+html(lang=En)
+    head
+        title головна
+        include componets/head
+    body
+        .wrapper
+            include componets/header
+            main
+                .container
+                    .sale-banner
+                        img(src="img/sale-banner.jpg")
+                        .sale-banner-title
+                            h1 Фурнитура для ванны
+                            .sale-banner-desc
+                                p ALWAYS
+                                    span 25%
+                                    | OFF OR MORE
+                    .breadcrumbs
+                        ul.breadcrumbs-list
+                            li
+                                a(href="index.html") Главная
+                            li
+                                a(href="catalog.html") Плитка
+                            li
+                                a(href="catalog-sub.html") Плитка для ванной
+                            li
+                                a(href="#") Название товара
+                    .product-card-wrap
+                        .product-card
+                            .card
+                                .card-left
+                                    p.product-name.product-name-top  Название товара
+                                    .cardPhoto
+                                        .cardPhoto-wrap
+                                            .cardPhoto-for
+                                                .cardPhoto-big
+                                                    img(src='img/product-img.png' alt='product-name' title='product-name')
+                                                    img(src='img/back-slider.png' alt='product-name' title='product-name')
+                                                    img(src='img/banner.png' alt='product-name' title='product-name')
+                                                    img(src='img/logo.png' alt='product-name' title='product-name')
+                                                    img(src='img/sale-banner.jpg' alt='product-name' title='product-name')
+                                            .cardPhoto-nav
+                                                .cardPhoto-item
+                                                    img(src='img/product-img.png' alt='product-name' title='product-name')
+                                                .cardPhoto-item
+                                                    img(src='img/back-slider.png' alt='product-name' title='product-name')
+                                                .cardPhoto-item
+                                                    img(src='img/banner.png' alt='product-name' title='product-name')
+                                                .cardPhoto-item
+                                                    img(src='img/logo.png' alt='product-name' title='product-name')
+                                                .cardPhoto-item
+                                                    img(src='img/sale-banner.jpg' alt='product-name' title='product-name')
+                                .card-right
+                                    .product
+                                        p.product-name.product-name-right  Название товара
+                                        .product-reviews
+                                            a(href="#")
+                                                span (
+                                                    span 0
+                                                |  отзывов)
+                                            a(href="#") добавить отзыв
+                                        .product-inform
+                                            .price
+                                                s.price-old 40000
+                                                    span грн
+                                                .price-new
+                                                    span 140400
+                                                    span грн
+                                            .add
+                                                .buy
+                                                    a(href="#") КУПИТЬ
+                                                .add-like
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 32 30" style="enable-background:new 0 0 32 30;" xml:space="preserve"><g><path d="M31.9,8.9C31.5,3.8,27.8,0,23.3,0c-3,0-5.8,1.6-7.4,4.3C14.4,1.6,11.7,0,8.7,0C4.2,0,0.5,3.8,0.1,8.9c0,0.2-0.2,1.4,0.3,3.4c0.7,2.8,2.2,5.4,4.4,7.5L15.9,30l11.3-10.2c2.2-2,3.8-4.6,4.4-7.5C32.1,10.4,32,9.2,31.9,8.9z M30.5,12.1c-0.6,2.6-2,4.9-4.1,6.8l-10.5,9.5L5.6,18.9c-2-1.9-3.5-4.2-4.1-6.8c-0.4-1.9-0.3-2.9-0.3-2.9l0-0.1c0.4-4.5,3.5-7.8,7.4-7.8c2.9,0,5.4,1.8,6.6,4.7l0.6,1.4l0.6-1.4c1.2-2.8,3.9-4.7,6.8-4.7c3.9,0,7,3.3,7.4,7.9C30.7,9.1,30.9,10.2,30.5,12.1z"/></g></svg>
+                                                .add-opposite
+                                                    a(href="#")
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><style type="text/css">.st0{fill:#2A2A2A;}</style><g><g><polygon class="st0" points="4.7,6.6 2.3,8.2 0,9.8 2.3,11.4 4.7,13 4.7,11 17,11 17,8.6 4.7,8.6 "/><polygon class="st0" points="14.7,1.6 12.3,0 12.3,2 0,2 0,4.4 12.3,4.4 12.3,6.4 14.7,4.8 17,3.2 "/></g></g></svg>
+                                            .product-count
+                                                span Количество:
+                                                .number
+                                                    input(type="text" value="1" size="5")
+                                                    a.minus -
+                                                    a.plus +
+                                        .product-little-desc
+                                            p Краткая иформация
+                                            p Loremipsum dolor sit ipsum dolor sit amet, consectetur a ameipipsum dolor sit amet, consectetur asum dolor sit amet, consectetur at, consectetur adipisicing elit. Consequatur dolor ex exercitationem ipsam, maxime mollitia pariatur quasi tempore voluptatem voluptatibus.
+                                        .available
+                                            p Наличие:
+                                            span Есть на складе
+                                        .code
+                                            p Код товара(если нужно):
+                                            span 111122
+                                        .delivery-pay
+                                            ul.delivery
+                                                li
+                                                    p Доставка в
+                                                        span  Киев
+                                                li
+                                                    p Самовывоз из
+                                                        span  наших магазинов
+                                                    span  бесплатно
+                                                li
+                                                    p Самовывоз из
+                                                        span  Новой Почты
+                                                    span  50 грн
+                                                li
+                                                    p Курьер по вашему адресу
+                                                    span  45 грн
+                                            .pay
+                                                .pay-item
+                                                    <?xml version="1.0" encoding="iso-8859-1"?><!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="30px" height="30px"><g><g><path d="M85.072,454.931c-1.859-1.861-4.439-2.93-7.069-2.93s-5.21,1.069-7.07,2.93c-1.86,1.861-2.93,4.44-2.93,7.07    s1.069,5.21,2.93,7.069c1.86,1.86,4.44,2.931,7.07,2.931s5.21-1.07,7.069-2.931c1.86-1.859,2.931-4.439,2.931-7.069    S86.933,456.791,85.072,454.931z" fill="#53509d"/></g></g><g><g><path d="M469.524,182.938c-1.86-1.861-4.43-2.93-7.07-2.93c-2.63,0-5.21,1.069-7.07,2.93c-1.859,1.86-2.93,4.44-2.93,7.07    s1.07,5.21,2.93,7.069c1.86,1.86,4.44,2.931,7.07,2.931c2.64,0,5.21-1.07,7.07-2.931c1.869-1.859,2.939-4.439,2.939-7.069    S471.393,184.798,469.524,182.938z" fill="#53509d"/></g></g><g><g><path d="M509.065,2.929C507.189,1.054,504.645,0,501.992,0L255.998,0.013c-5.522,0-9.999,4.478-9.999,10V38.61l-94.789,25.399    c-5.335,1.43-8.501,6.913-7.071,12.247l49.127,183.342l-42.499,42.499c-5.409-7.898-14.491-13.092-24.764-13.092H30.006    c-16.542,0-29.999,13.458-29.999,29.999v162.996C0.007,498.542,13.464,512,30.006,512h95.998c14.053,0,25.875-9.716,29.115-22.78    l11.89,10.369c9.179,8.004,20.939,12.412,33.118,12.412h301.867c5.522,0,10-4.478,10-10V10    C511.992,7.348,510.94,4.804,509.065,2.929z M136.002,482.001c0,5.513-4.486,10-10,10H30.005c-5.514,0-10-4.486-10-10V319.005    c0-5.514,4.486-10,10-10h37.999V424.2c0,5.522,4.478,10,10,10s10-4.478,10-10V309.005h37.999c5.514,0,10,4.486,10,10V482.001z     M166.045,80.739l79.954-21.424V96.37l-6.702,1.796c-2.563,0.687-4.746,2.362-6.072,4.659s-1.686,5.026-0.999,7.588    c3.843,14.341-4.698,29.134-19.039,32.977c-2.565,0.688-4.752,2.366-6.077,4.668c-1.325,2.301-1.682,5.035-0.989,7.599    l38.979,144.338h-20.07l-10.343-40.464c-0.329-1.288-0.905-2.475-1.676-3.507L166.045,80.739z M245.999,142.229v84.381    l-18.239-67.535C235.379,155.141,241.614,149.255,245.999,142.229z M389.663,492H200.125V492c-7.345,0-14.438-2.658-19.974-7.485    l-24.149-21.061V325.147l43.658-43.658l7.918,30.98c1.132,4.427,5.119,7.523,9.688,7.523l196.604,0.012c7.72,0,14,6.28,14,14    c0,7.72-6.28,14-14,14H313.13c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10h132.04c7.72,0,14,6.28,14,14c0,7.72-6.28,14-14,14    H313.13c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10h110.643c7.72,0,14,6.28,14,14c0,7.72-6.28,14-14,14H313.13    c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10h76.533c7.72,0,14,6.28,14,14C403.662,485.72,397.382,492,389.663,492z     M491.994,492h-0.001h-71.359c1.939-4.273,3.028-9.01,3.028-14s-1.089-9.727-3.028-14h3.139c18.747,0,33.999-15.252,33.999-33.999    c0-5.468-1.305-10.635-3.609-15.217c14.396-3.954,25.005-17.149,25.005-32.782c0-7.584-2.498-14.595-6.711-20.255V235.007    c0-5.522-4.478-10-10-10c-5.522,0-10,4.478-10,10v113.792c-2.35-0.515-4.787-0.795-7.289-0.795h-0.328    c1.939-4.273,3.028-9.01,3.028-14c0-18.748-15.252-33.999-33.999-33.999h-16.075c17.069-7.32,29.057-24.286,29.057-44.005    c0-26.389-21.468-47.858-47.857-47.858c-26.388,0-47.857,21.469-47.857,47.858c0,19.719,11.989,36.685,29.057,44.005h-54.663    V109.863c17.864-3.893,31.96-17.988,35.852-35.853h75.221c3.892,17.865,17.988,31.96,35.852,35.853v31.09c0,5.522,4.478,10,10,10    s10-4.478,10-10v-40.018c0-5.522-4.478-10-10-10c-14.847,0-26.924-12.079-26.924-26.925c0-5.522-4.478-10-10-10h-93.076    c-5.522,0-10,4.478-10,10c0,14.847-12.078,26.925-26.924,26.925c-5.522,0-10,4.478-10,10v199.069H266V20.011L491.994,20V492z     M378.996,283.858c-15.361,0-27.857-12.497-27.857-27.857s12.497-27.858,27.857-27.858S406.853,240.64,406.853,256    S394.357,283.858,378.996,283.858z" fill="#53509d"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                    p Наличный расчет
+                                                .pay-item
+                                                    <?xml version="1.0" encoding="iso-8859-1"?><!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 92.821 92.821" style="enable-background:new 0 0 92.821 92.821;" xml:space="preserve" width="30px" height="30px"><g><g><path d="M77.45,65.06V52.924h-4.452v9.702c0,1.517-1.242,2.756-2.756,2.756H15.106    c-1.514,0-2.756-1.238-2.756-2.756V29.554c0-1.521,1.242-2.759,2.756-2.759H46.65v-2.827H11.066c-1.739,0-3.167,1.417-3.167,3.16    v18.971V65.06v3.16L0,77.704c0,2.62,2.122,4.746,4.738,4.746h75.868c2.616,0,4.738-2.126,4.738-4.746l-7.899-9.484v-3.16H77.45z     M49.002,80.864H36.354c-0.44,0-0.791-0.351-0.791-0.791s0.351-0.791,0.791-0.791h12.644c0.433,0,0.791,0.351,0.791,0.791    C49.782,80.513,49.435,80.864,49.002,80.864z M29.644,77.704l2.412-2.895h21.237l2.412,2.895    C55.705,77.704,29.644,77.704,29.644,77.704z" fill="#53509d"/><g><rect x="37.485" y="47.287" width="6.603" height="6.596" fill="#53509d"/><rect x="41.622" y="38.219" width="6.599" height="6.603" fill="#53509d"/><rect x="48.114" y="46.5" width="6.599" height="6.599" fill="#53509d"/><rect x="53.361" y="35.534" width="7.831" height="7.831" fill="#53509d"/><rect x="64.437" y="11.531" width="7.831" height="7.831" fill="#53509d"/><rect x="50.229" y="25.693" width="7.831" height="7.831" fill="#53509d"/><rect x="62.537" y="22.343" width="11.184" height="11.184" fill="#53509d"/><rect x="70.89" y="35.824" width="13.528" height="13.532" fill="#53509d"/><rect x="76.011" y="10.372" width="16.81" height="16.81" fill="#53509d"/><rect x="60.518" y="44.263" width="7.831" height="7.831" fill="#53509d"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                    p Безналичный расчет
+                                                .pay-item
+                                                    <?xml version="1.0" encoding="iso-8859-1"?><!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 611.996 611.996" style="enable-background:new 0 0 611.996 611.996;" xml:space="preserve" width="30px" height="30px"><g><g><path d="M588.63,113.193L213.812,33.871c-15.858-3.355-31.576,6.876-34.931,22.734l-7.121,45.762l432.477,91.519l7.121-45.762    C614.713,132.272,604.488,116.549,588.63,113.193z" fill="#53509d"/><path d="M431.009,203.591c-4.378-15.766-20.854-25.085-36.615-20.714L323.24,202.63l-167.742-35.5l-18.448,87.165L21.786,286.287    c-15.76,4.372-25.079,20.848-20.708,36.609l64.958,234.078c4.378,15.76,20.855,25.085,36.615,20.708l372.608-103.403    c15.76-4.378,25.079-20.848,20.708-36.615l-11.15-40.184l41.789,8.835c15.858,3.361,31.576-6.87,34.931-22.728l26.439-124.937    L437.45,226.797L431.009,203.591z M474.04,322.559l9.215-43.552c1.384-6.521,7.85-10.727,14.37-9.35l43.552,9.221    c6.527,1.384,10.733,7.843,9.356,14.37l-9.215,43.552c-1.384,6.521-7.849,10.733-14.37,9.35l-43.552-9.215    C476.863,335.546,472.656,329.08,474.04,322.559z M28.27,309.646l103.115-28.606l243.299-67.517l26.181-7.274    c0.478-0.129,0.955-0.19,1.421-0.19c2.1,0,4.611,1.378,5.345,4.017l3.074,11.07l9.631,34.704L37.148,362.186l-12.705-45.768    C23.647,313.546,25.399,310.442,28.27,309.646z M472.601,444.141c0.49,1.776-0.024,3.245-0.545,4.164    c-0.514,0.918-1.506,2.119-3.282,2.608L96.173,554.316c-0.471,0.129-0.955,0.196-1.421,0.196c-2.1,0-4.611-1.384-5.345-4.023    L51.519,413.955l383.188-106.342l23.371,84.208L472.601,444.141z" fill="#53509d"/><path d="M156.379,453.484c-1.788-6.429-8.499-10.225-14.928-8.443l-43.515,12.08c-6.423,1.782-10.225,8.499-8.437,14.928    l12.074,43.509c1.788,6.429,8.499,10.225,14.928,8.437l43.515-12.074c6.429-1.782,10.225-8.499,8.443-14.928L156.379,453.484z" fill="#53509d"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                    p Банковской картой
+                            .tab-product-wrap
+                                .tab-product#tabs
+                                    ul.tab-list
+                                        li
+                                            a(href="#tabs-1") Описание
+                                        li
+                                            a(href="#tabs-2") Характеристика
+                                        li
+                                            a(href="#tabs-3") Отзывы
+                                    .tab-content#tabs-1
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, velit.
+                                    .tab-content#tabs-2
+                                        .characteristics
+                                            .comparison
+                                                .comparison-wrap
+                                                    .comparison-row
+                                                        .row
+                                                            p Страна
+                                                        .row
+                                                            p Чехия
+                                                    .comparison-row
+                                                        .row
+                                                            p Производитель
+                                                        .row
+                                                            p Ravak
+                                                    .comparison-row
+                                                        .row
+                                                            p Коллекция
+                                                        .row
+                                                            p Thai SPA
+                                                    .comparison-row
+                                                        .row
+                                                            p Артикул
+                                                        .row
+                                                            P TSP001
+                                                    .comparison-row
+                                                        .row
+                                                            p Цвет
+                                                        .row
+                                                            p Хром
+                                                    .comparison-row
+                                                        .row
+                                                            p Мощность
+                                                        .row
+                                                            p 1,93 кВт
+                                                    .comparison-row
+                                                        .row
+                                                            p Тип товара
+                                                        .row
+                                                            p Сантехника
+                                                    .comparison-row
+                                                        .row
+                                                            p Гарантия
+                                                        .row
+                                                            p 2 года
+                                                    .comparison-row
+                                                        .row
+                                                            p Дополнительно
+                                                        .row
+                                                            p 6 минифорсунок среднего диаметра (64 мм) 60 нанофорсунок особо малого диаметра (8мм) 2 минифорсунки ротационные среднего диаметра (64 мм) 17 аэрофорсунок малого диаметра (30 мм)
+                                                    .comparison-row
+                                                        .row
+                                                            p Характеристика 10
+                                                        .row
+                                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, odit.
+                                                    .comparison-row
+                                                        .row
+                                                            p Характеристика 11
+                                                        .row
+                                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores culpa cum deserunt dolor facere harum iure maiores molestiae, nihil officia optio perspiciatis quae quis repudiandae soluta sunt temporibus.
+                                    .tab-content#tabs-3
+                                        .cardTabsReviews.cardTabsContainer
+                                            h3 Добавить отзыв как гость или <a href='#'>войдите в кабинет</a>
+                                            form#reviews-products-guest.cardTabsReviews-form(method='post' action='/')
+                                                .cardTabsReviews-message
+                                                    span Ваш отзыв
+                                                    textarea(name='guest__message')
+                                                .cardTabsReviews-block
+                                                    .cardTabsReviews-name
+                                                        span Имя*
+                                                        input(type='text' name='guest__name' id='user__name')
+                                                    .cardTabsReviews-email
+                                                        span E-mail
+                                                        input(type='email' name='guest__email' id='user__email')
+                                                    .cardTabsReviews-btn
+                                                        .btn
+                                                            .btn-block
+                                                                input(type='submit' name='send__review' id='send__review' title='Отправить' value='Отправить')
+                                            ul.post-list
+                                                li.post
+                                                    .post-content
+                                                        .post-body
+                                                            .post-userName
+                                                                p Гость, или имя зарегистрированного клиента,
+                                                                span 31.07.2017 г.
+                                                            .post-inner
+                                                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                                                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                                                            .post-bottom
+                                                                a(href='#') Ответить
+                                                            .post-area-form
+                                                    ul.post-children
+                                                        li.post
+                                                            .post-content
+                                                                .post-body
+                                                                    .post-userName
+                                                                        p Гость, или имя зарегистрированного клиента,
+                                                                        span 31.07.2017 г.
+                                                                    .post-inner
+                                                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                                                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                                                                    .post-bottom
+                                                                        a(href='#') Ответить
+                                                                    .post-area-form
+                                                            ul.post-children
+                            //.wrap-tabs
+                            //    .wrap-tabs-list
+                            //        input#tab-first(type="radio" name="tabs" checked)
+                            //        label(for="tab-first")
+                            //            a Описание
+                            //        input#tab-second(type="radio" name="tabs")
+                            //        label(for="tab-second")
+                            //            a Характеристика
+                            //        input#tab-third(type="radio" name="tabs")
+                            //        label(for="tab-third")
+                            //            a Отзывы
+                            //        .tab-content#tab-content-1
+                            //            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto aut cumque distinctio doloremque doloribus, impedit ipsam laudantium magnam nostrum quae quo recusandae reiciendis reprehenderit saepe sapiente suscipit tempora vitae. Animi at et ipsa itaque repellendus ut voluptate! Ab alias atque deserunt dicta eius eos illo maiores necessitatibus nesciunt nisi, pariatur quibusdam, voluptatum! Accusantium ad facere illum labore, magnam nobis numquam quae quaerat quibusdam rem vel, vitae? Animi dolore, ducimus enim libero odio quam quibusdam quisquam voluptatum. Alias atque debitis esse illo iste nesciunt nisi nulla omnis, vitae voluptatum! A, aspernatur dicta eum facere, iure libero maxime modi natus, qui quod ratione tempora vitae. Adipisci architecto delectus deleniti dolor doloremque dolores est hic, ipsa laborum libero nam, nobis odio officiis perferendis praesentium quo recusandae rem saepe sapiente sed sunt tenetur veniam voluptate? Aliquid dolor nihil tempore veritatis! Culpa dicta eius eum fugit, id nemo porro tempora! Expedita fugiat hic inventore numquam recusandae repellendus temporibus, vel voluptate. Adipisci aliquam debitis dolorem earum fugit ipsa magni officia optio, pariatur quas repellat repellendus, sed soluta! Cumque dicta dolor perspiciatis quas reiciendis sint? Animi dolorem et, facilis labore libero maiores rem voluptate voluptatum. Aperiam assumenda autem commodi dicta, excepturi iste nihil reprehenderit ullam voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloribus ea enim explicabo harum ipsam labore laudantium magni necessitatibus reiciendis?
+                            //        .tab-content#tab-content-2
+                            //            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, distinctio dolorem doloribus eos expedita hic impedit nihil quo? Alias aliquam blanditiis iusto labore minima? Accusamus ad adipisci alias aliquam, aliquid amet at beatae doloremque enim ex fugit illo ipsum iste itaque labore laudantium maxime minima modi molestiae mollitia odio optio porro quia quidem quod rem sapiente tempore, unde voluptatibus voluptatum. Ab, illo ipsam magni molestias necessitatibus nesciunt tenetur voluptatem! Adipisci assumenda consectetur consequuntur cumque dolorum error esse, est excepturi harum in ipsam iure maiores maxime nam neque non omnis optio perspiciatis quas quasi quisquam reiciendis rem sapiente soluta, tempora ut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet aperiam assumenda beatae commodi debitis dolore dolorem doloremque doloribus eaque ex excepturi facere facilis harum maxime modi natus nemo nihil, nostrum, officiis perferendis porro praesentium quia sequi sit temporibus velit voluptates? Accusantium adipisci alias doloribus eos ipsa iusto laudantium non quis voluptate! Atque delectus dolor facilis illum minus, pariatur tempora.
+                            //        .tab-content#tab-content-3
+                            //            .cardTabsReviews.cardTabsContainer
+                            //                h3 Добавить отзыв как гость или <a href='#'>войдите в кабинет</a>
+                            //                form#reviews-products-guest.cardTabsReviews-form(method='post' action='/')
+                            //                    .cardTabsReviews-message
+                            //                        span Ваш отзыв
+                            //                        textarea(name='guest__message')
+                            //                    .cardTabsReviews-block
+                            //                        .cardTabsReviews-name
+                            //                            span Имя*
+                            //                            input(type='text' name='guest__name' id='user__name')
+                            //                        .cardTabsReviews-email
+                            //                            span E-mail
+                            //                            input(type='email' name='guest__email' id='user__email')
+                            //                        .cardTabsReviews-btn
+                            //                            .btn
+                            //                                .btn-block
+                            //                                    input(type='submit' name='send__review' id='send__review' title='Отправить' value='Отправить')
+                            //                ul.post-list
+                            //                    li.post
+                            //                        .post-content
+                            //                            .post-body
+                            //                                .post-userName
+                            //                                    p Гость, или имя зарегистрированного клиента,
+                            //                                    span 31.07.2017 г.
+                            //                                .post-inner
+                            //                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            //                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            //                                .post-bottom
+                            //                                    a(href='#') Ответить
+                            //                                .post-area-form
+                            //                        ul.post-children
+                            //                            li.post
+                            //                                .post-content
+                            //                                    .post-body
+                            //                                        .post-userName
+                            //                                            p Гость, или имя зарегистрированного клиента,
+                            //                                            span 31.07.2017 г.
+                            //                                        .post-inner
+                            //                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            //                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            //                                        .post-bottom
+                            //                                            a(href='#') Ответить
+                            //                                        .post-area-form
+                            //                                ul.post-children
+            include componets/footer
+        include componets/scripts

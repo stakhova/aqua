@@ -1,0 +1,10 @@
+{
+  "name": "Dovhopola",
+  "version": "1.0",
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "jquery-validation": "^1.17.0",
+    "vide": "^0.5.1",
+    "waypoints": "^4.0.1"
+  }
+}

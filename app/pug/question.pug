@@ -1,0 +1,84 @@
+include mixin/mixin
+doctype html
+html
+    head
+        include componets/head
+    body
+        .wrapper
+            include componets/header
+            main
+                .container
+                    .sale-banner
+                        img(src="img/sale-banner.jpg")
+                        .sale-banner-title
+                            h1 Фурнитура для ванны
+                            .sale-banner-desc
+                                p ALWAYS
+                                    span 25%
+                                    | OFF OR MORE
+                    .breadcrumbs
+                        ul.breadcrumbs-list
+                            li
+                                a(href="index.html") Главная
+                            li
+                                a(href="question.html") Вопросы и ответы
+                    .question-wrap
+                        .main-title
+                            p Вопросы и ответы
+                        .question
+                            p Оплата и доставка
+                            ul.question-list
+                                li
+                                    a(href="#") Осуществляете ли Вы доставку до квартиры и подъем на этаж?
+                                li
+                                    a(href="#") Сколько дней товар находится в пункте выдачи?
+                                li
+                                    a(href="#") Требуется ли дополнительная оплата за перевод средств при наложенном платеже в отделении Новой Почты?
+                                li
+                                    a(href="#") Есть ли возможность отказаться от части заказа в пункте выдачи?
+                                li
+                                    a(href="#") Что делать, если товар был поврежден при перевозке?
+                                li
+                                    a(href="#") Возможно ли оплатить заказ картой при получении?
+                                li
+                                    a(href="#") Как я могу оплатить свой заказ?
+                                li
+                                    a(href="#") Как осуществляется доставка по Киеву?
+                            p Гарантия и сервисное обслуживание
+                            ul.question-list
+                                li
+                                    a(href="#") На какие товары предоставляется гарантия?
+                                li
+                                    a(href="#") Куда обращаться за гарантийным обслуживанием?
+                                li
+                                    a(href="#") Я могу обменять или вернуть товар?
+                                li
+                                    a(href="#") Где и как можно произвести обмен или возврат?
+                                li
+                                    a(href="#") Сервисный центр не может отремонтировать мой товар в гарантийный период
+                                li
+                                    a(href="#") В каких случаях гарантия не предоставляется?
+                                li
+                                    a(href="#") Я хочу обменять или вернуть товар. Какой график работы у сервисного отдела?
+                                li
+                                    a(href="#") Есть ли возможность обменять / вернуть товар?
+                                li
+                                    a(href="#") Где и как можно произвести обмен или возврат?
+                                li
+                                    a(href="#") Распространяется ли гарантия на уцененные товары?
+                            .about-company-question
+                                form(method='get' action='/').form-big
+                                    p Остались вопросы? Задавайте!
+                                    .form-items
+                                        .form-item
+                                            input(type='text' name='producer' placeholder="Email*" id='producer_1')
+                                        .form-item
+                                            input(type='text' name='producer' placeholder="Фамилия, имя*" id='producer_2')
+                                        .form-item
+                                            input(type='text' name='producer' placeholder="Телефон*" id='producer_3')
+                                        .form-item
+                                            textarea(type='text' name='producer' placeholder="Что вы хотели спросить?" id='producer_4')
+                                        .form-button
+                                            a.form-btn(href="#") Отправить
+            include componets/footer
+        include componets/scripts

@@ -1,0 +1,169 @@
+doctype html
+html(lang=En)
+    head
+        title головна
+        include componets/head
+    body
+        .wrapper
+            include componets/header
+            main
+                .container
+                    .sale-banner
+                        img(src="img/sale-banner.jpg")
+                        .sale-banner-title
+                            h1 Фурнитура для ванны
+                            .sale-banner-desc
+                                p ALWAYS
+                                    span 25%
+                                    | OFF OR MORE
+                    .breadcrumbs
+                        ul.breadcrumbs-list
+                            li
+                                a(href="index.html") Главная
+                            li
+                                a(href="basket.html") Корзина
+                    .basket-wrap
+                        .main-title
+                            p Корзина
+                        .basket-main
+                            .tab-basket
+                                table.tab-basket-table
+                                    thead
+                                        tr
+                                            th №
+                                            th Фото
+                                            th Название
+                                            th Цена
+                                            th Количество
+                                            th Стоимость
+                                    tbody
+                                        tr
+                                            td 1.
+                                            td
+                                                img.tab-basket-img(src="img/product-img.png")
+                                            td
+                                                p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                            td
+                                                .price-new
+                                                    span 1500000
+                                                    span  грн
+                                            td
+                                                .number
+                                                    input(type="text" value="1" size="5")
+                                                    a.minus -
+                                                    a.plus +
+                                            td
+                                                .summ-product
+                                                 span 150000
+                                                    .tab-item-remove
+                                                        img(src='img/cancel.svg')
+                                                    span  грн
+                                        tr
+                                            td 2.
+                                                td
+                                                    img.tab-basket-img(src="img/basket-img.png")
+                                                td
+                                                    p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                td
+                                                    .price-new
+                                                        span 1500000
+                                                        span  грн
+                                                td
+                                                    .number
+                                                        input(type="text" value="1" size="5")
+                                                        a.minus -
+                                                        a.plus +
+                                                td
+                                                    .summ-product
+                                                        span 150000
+                                                        .tab-item-remove
+                                                            img(src='img/cancel.svg')
+                                                        span  грн
+                                        tr
+                                            td 3.
+                                                td
+                                                    img.tab-basket-img(src="img/banner.png")
+                                                td
+                                                    p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                td
+                                                    .price-new
+                                                        span 1500000
+                                                        span  грн
+                                                td
+                                                    .number
+                                                        input(type="text" value="1" size="5")
+                                                        a.minus -
+                                                        a.plus +
+                                                td
+                                                    .summ-product
+                                                        span 150000
+                                                        .tab-item-remove
+                                                            img(src='img/cancel.svg')
+                                                        span  грн
+                                .summ
+                                    span Общая сумма
+                                    .summ-all
+                                        span 74000
+                                        span грн
+                                .tab-basket-button
+                                    a(href="#") ВЕРНУТЬСЯ К ПОКУПКАМ
+                                    a(href="#") Оформить заказ
+                        .basket-mob
+                            .basket-mob-item
+                                img.tab-basket-img(src="img/product-img.png")
+                                .basket-mob-block
+                                    p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                    .price-new
+                                        span 1500000
+                                        span  грн
+                                    .number
+                                        input(type="text" value="1" size="5")
+                                        a.minus -
+                                        a.plus +
+                                .summ-product
+                                    span 150000
+                                    .tab-item-remove
+                                        img(src='img/cancel.svg')
+                                    span  грн
+                            .basket-mob-item
+                                img.tab-basket-img(src="img/product-img.png")
+                                .basket-mob-block
+                                    p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                    .price-new
+                                        span 1500000
+                                        span  грн
+                                    .number
+                                        input(type="text" value="1" size="5")
+                                        a.minus -
+                                        a.plus +
+                                .summ-product
+                                    span 150000
+                                    .tab-item-remove
+                                        img(src='img/cancel.svg')
+                                    span  грн
+                            .basket-mob-item
+                                img.tab-basket-img(src="img/product-img.png")
+                                .basket-mob-block
+                                    p.product-name Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                    .price-new
+                                        span 1500000
+                                        span  грн
+                                    .number
+                                        input(type="text" value="1" size="5")
+                                        a.minus -
+                                        a.plus +
+                                .summ-product
+                                    span 150000
+                                    .tab-item-remove
+                                        img(src='img/cancel.svg')
+                                    span  грн
+                            .summ
+                                span Общая сумма
+                                .summ-all
+                                    span 74000
+                                    span грн
+                            .tab-basket-button
+                                a(href="#") ВЕРНУТЬСЯ К ПОКУПКАМ
+                                a(href="#") Оформить заказ
+            include componets/footer
+        include componets/scripts

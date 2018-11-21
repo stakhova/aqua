@@ -1,0 +1,44 @@
+doctype html
+html(lang=En)
+    head
+        title головна
+        include componets/head
+    body
+        .wrapper
+            include componets/header
+            main
+                .container
+                    .sale-banner
+                        img(src="img/sale-banner.jpg")
+                        .sale-banner-title
+                            h1 Фурнитура для ванны
+                            .sale-banner-desc
+                                p ALWAYS
+                                    span 25%
+                                    | OFF OR MORE
+                    .breadcrumbs
+                        ul.breadcrumbs-list
+                            li
+                                a(href="index.html") Главная
+                            li
+                                a(href="enter.html") Вход в личный кабинет
+                    .enter
+                        .main-title
+                            p Вход в личный кабинет
+                        .enter-form
+                            form(method='get' action='/').form-small
+                                .enter-title
+                                    p Ввойдите
+                                        span  или
+                                        a(href="registration.html")  Зарегистрируйтесь
+                                        span  если у Вас нету аккаунта
+                                .form-items
+                                    .form-item
+                                        input(type='text' name='producer' placeholder="Email*" id='enter-email')
+                                    .form-item
+                                        input(type='text' name='producer' placeholder="Пароль*" id='enter-password')
+                                    a.form-btn(href="#") Ввойти
+                                    p.forgot-pass
+                                        a(href="") Забыли пароль?
+            include componets/footer
+        include componets/scripts

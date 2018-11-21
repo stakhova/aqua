@@ -1,0 +1,51 @@
+doctype html
+html(lang=En)
+    head
+        title головна
+        include componets/head
+    body
+        .wrapper
+            include componets/header
+            main
+                .container
+                    .sale-banner
+                        img(src="img/sale-banner.jpg")
+                        .sale-banner-title
+                            h1 Фурнитура для ванны
+                            .sale-banner-desc
+                                p ALWAYS
+                                    span 25%
+                                    | OFF OR MORE
+                    .breadcrumbs
+                        ul.breadcrumbs-list
+                            li
+                                a(href="index.html") Главная
+                            li
+                                a(href="registration.html") Регистрация
+                    .registration-wrap
+                        .main-title
+                            p Регистрация
+                        .registration
+                            form(method='get' action='/').form-small
+                                p Зарегистрируйтесь
+                                    span  или
+                                    a(href="#")  Войдите в личный кабинет
+                                    span  если у Вас есть аккаунт
+                                .form-items
+                                    .form-item
+                                        input(type='text' name='producer' placeholder="Фамилия, имя, отчество*" id='producer_1')
+                                    .form-item
+                                        input(type='text' name='producer' placeholder="Мобильный телефон*" id='producer_2')
+                                    .form-item
+                                        input(type='text' name='producer' placeholder="Email*" id='producer_3')
+                                    .form-item
+                                        input(type='text' name='producer' placeholder="Адрес*" id='producer_4')
+                                    .form-item
+                                        textarea(type='text' name='producer' placeholder="Дополнительная информация" id='producer_5')
+                                    .form-item
+                                        input(type='text' name='producer' placeholder="Пароль*" id='producer_6')
+                                    .form-item
+                                        input(type='text' name='producer' placeholder="Повторите пароль*" id='producer_7')
+                                    a.form-btn(href="#") Зарегистрироваться
+            include componets/footer
+        include componets/scripts

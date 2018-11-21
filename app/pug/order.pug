@@ -1,0 +1,119 @@
+doctype html
+html(lang=En)
+    head
+        title головна
+        include componets/head
+    body
+        .wrapper
+            include componets/header
+            main
+                .container
+                    .sale-banner
+                        img(src="img/sale-banner.jpg")
+                        .sale-banner-title
+                            h1 Фурнитура для ванны
+                            .sale-banner-desc
+                                p ALWAYS
+                                    span 25%
+                                    | OFF OR MORE
+                    .breadcrumbs
+                        ul.breadcrumbs-list
+                            li
+                                a(href="index.html") Главная
+                            li
+                                a(href="#") Корзина
+                            li
+                                a(href="#") Оформление заказа
+                    .order-wrap
+                        .main-title
+                            p Оформление заказа
+                        .order
+                            .order-left
+                                .order-form
+                                    form(method='get' action='/').form-small
+                                        p Вашы данные
+                                            span  или
+                                            a(href="enter.html")  Войдите /
+                                            a(href="registration.html") Зарегистрируйтесь
+                                        .form-items
+                                            .form-item
+                                                input(type='text' name='producer' placeholder="Фамилия, имя*" id='producer_1')
+                                            .form-item
+                                                input(type='text' name='producer' placeholder="Мобильный телефон*" id='producer_2')
+                                            .form-item
+                                                input(type='text' name='producer' placeholder="Email*" id='producer_3')
+                                            .form-item
+                                                input(type='text' name='producer' placeholder="Город*" id='producer_4')
+                                            .filter-items
+                                                .filter-row
+                                                    p Доставка
+                                                    .filter-drop
+                                                        .filter-item
+                                                            input(type='checkbox' name='producer' id='producer_11')
+                                                            label(for='producer_11') Самовывоз из магазина (бесплатно)
+                                                        .filter-item
+                                                            input(type='checkbox' name='producer' id='producer_21')
+                                                            label(for='producer_21') Доставка курьером (для города Киев)
+                                                        .filter-item
+                                                            input(type='checkbox' name='producer' id='producer_31')
+                                                            label(for='producer_31') Доставка в отделение “Новая пошта”
+                                                .filter-row
+                                                    p Оплата
+                                                    .filter-drop
+                                                        .filter-item
+                                                            input(type='checkbox' name='producer' id='producer_41')
+                                                            label(for='producer_41') Наличными
+                                                        .filter-item
+                                                            input(type='checkbox' name='producer' id='producer_51')
+                                                            label(for='producer_51') Безналичными
+                                                        .filter-item
+                                                            input(type='checkbox' name='producer' id='producer_61')
+                                                            label(for='producer_61') Visa / MasterCard
+                                                        .filter-item
+                                                            input(type='checkbox' name='producer' id='producer_71')
+                                                            label(for='producer_71') Visa / Privat 24
+                                            .form-item
+                                                textarea(type='text' name='producer' placeholder="Коментарий к заказу" id='producer_5')
+                                            a.form-btn(href="#") Подтвердить заказ
+                            .order-right
+                                .order-title
+                                    p Ваш заказ
+                                    a(href="#") Редактировать заказ
+                                .tab-basket
+                                    table.tab-basket-table
+                                        thead
+                                            tr
+                                                th №
+                                                th Название
+                                                th Стоимость
+                                        tbody
+                                            tr
+                                                td 1
+                                                td Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                    p.bs-count 1
+                                                        span  шт
+                                                td 1500000
+                                                    span грн
+                                            tr
+                                                td 2
+                                                td Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                    p.bs-count 1
+                                                        span  шт
+                                                td 1500000
+                                                    span грн
+                                            tr
+                                                td 3
+                                                td Ванна Atlantis Start Five tis Start Five On tis Start Five On  One Size Белая (STFVRO)
+                                                    p.bs-count 1
+                                                        span  шт
+                                                td 1500000
+                                                    span грн
+                                    .summ
+                                        span Общая сумма
+                                        .summ-all
+                                            span 74000
+                                            span грн
+                                    .tab-basket-button
+                                        a(href="#") ВЕРНУТЬСЯ К ПОКУПКАМ
+            include componets/footer
+        include componets/scripts
